@@ -1,0 +1,125 @@
+/* Start Global Rules */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+/* End Global Rules */
+/* Start Main Style */
+main {
+    padding: 30px;
+}
+h1 {
+    position: absolute;
+    color: hsl(0, 0%, 95%);
+}
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 925px;
+    margin: 150px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.column {
+    padding: 50px;
+}
+.column:first-child {
+    background-color: hsl(31, 77%, 52%);
+}
+.column:first-child button {
+    color: hsl(31, 77%, 52%);
+}
+.column:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.column:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+.column:last-child {
+    background-color: hsl(179, 100%, 13%);
+}
+.column:last-child button {
+    color: hsl(179, 100%, 13%);
+}
+.column img {
+    margin-bottom: 30px;
+}
+.column h2 {
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+
+}
+.column p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 90px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.column button {
+    background-color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    padding: 12.5px 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.column button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+@media (max-width: 768px) {
+    .columns {
+        margin: 50px auto;
+    }
+    .column p {
+        margin-bottom: 30px;
+    }
+}
+/* End Main Style */
+
+/* Start Footer */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+}
+footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+footer span {
+    padding: 5px;
+    color: hsl(31, 77%, 52%);
+}
+footer span:first-child {
+    margin-left: -5px;
+}
+footer a {
+    color: hsl(179, 100%, 13%);
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: hsl(184, 100%, 22%);
+}
+/* End Footer */
